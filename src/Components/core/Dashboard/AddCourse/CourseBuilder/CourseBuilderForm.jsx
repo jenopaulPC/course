@@ -106,12 +106,12 @@ const CourseBuilderForm = () => {
         <div className="flex items-end gap-x-4">
           <button
             type="submit"
-            className="flex items-center border border-yellow-50 bg-transparent cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined"
+            className="flex items-center border border-blue-50 bg-transparent cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined"
           >
-            <span className="text-yellow-50">
+            <span className="text-blue-50">
               {editSectionName ? "Edit Section Name" : "Create Section"}
             </span>
-            <AiOutlinePlusCircle size={20} className="text-yellow-50" />
+            <AiOutlinePlusCircle size={20} className="text-blue-50" />
           </button>
           {editSectionName && (
             <button
@@ -140,7 +140,7 @@ const CourseBuilderForm = () => {
         </button>
         <button
           onClick={gonext}
-          className="flex items-center bg-yellow-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined"
+          className="flex items-center bg-blue-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined"
         >
           <span className="false">Next</span>
           <svg

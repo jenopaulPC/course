@@ -38,7 +38,7 @@ const AdminPannel = () => {
                         (e) => setCategory({ ...category, description: e.target.value })
                     } type="text" name="category" id="category" className="form-style" placeholder='Enter category description' />
                 </div>
-                <button type="submit" className=" mt-10 rounded-md bg-yellow-50 px-6 py-3 text-center text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)] transition-all duration-200 hover:scale-95 hover:shadow-none  disabled:bg-richblack-500 sm:text-[16px] ">Create</button>
+                <button type="submit" className=" mt-10 rounded-md bg-blue-50 px-6 py-3 text-center text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)] transition-all duration-200 hover:scale-95 hover:shadow-none  disabled:bg-richblack-500 sm:text-[16px] ">Create</button>
             </form>
         </div>
     )

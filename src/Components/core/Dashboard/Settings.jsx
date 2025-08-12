@@ -122,7 +122,7 @@ const Settings = () => {
             <div className='flex flex-row gap-3'>
               <label className="cursor-pointer rounded-md bg-richblack-700 py-2 px-5 font-semibold text-richblack-50'" htmlFor="upload">Select
             <input id='upload' type="file" onChange={handleFileChange} className="hidden" accept="image/png, image/gif, image/jpeg"/></label>
-             <button type='submit' className='flex items-center bg-yellow-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined'>Upload</button>
+             <button type='submit' className='flex items-center bg-blue-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined'>Upload</button>
             </div>
             </form>
             </div>
@@ -171,7 +171,7 @@ const Settings = () => {
                 </div>
               </div>
           </div>
-          <div className="flex justify-end gap-2"><button className="flex items-center bg-yellow-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined" type="submit">Save</button></div>
+          <div className="flex justify-end gap-2"><button className="flex items-center bg-blue-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined" type="submit">Save</button></div>
           </form>
 
 
@@ -255,7 +255,7 @@ const Settings = () => {
                                      </span>
                                 </div>
                                 </div>
-                                <div className="flex justify-end gap-2 mt-3"><button className="flex items-center bg-yellow-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined" type="submit">Save</button></div>
+                                <div className="flex justify-end gap-2 mt-3"><button className="flex items-center bg-blue-50 cursor-pointer gap-x-2 rounded-md py-2 px-5 font-semibold text-richblack-900 undefined" type="submit">Save</button></div>
                                 </form>
 
 

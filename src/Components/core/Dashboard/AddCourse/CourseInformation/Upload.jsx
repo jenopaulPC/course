@@ -61,7 +61,7 @@ const Upload = ({name, label, register, errors, setValue}) => {
           viewBox="0 0 24 24"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-2xl text-yellow-50"
+          className="text-2xl text-blue-50"
           height="1em"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const Upload = ({name, label, register, errors, setValue}) => {
       </div>
       <p className="mt-2 max-w-[200px] text-center text-sm text-richblack-200">
         Drag and drop an image, or click to{" "}
-        <span className="font-semibold text-yellow-50">Browse</span> a file
+        <span className="font-semibold text-blue-50">Browse</span> a file
       </p>
       <ul className="mt-10 flex list-disc justify-between space-x-12 text-center  text-xs text-richblack-200">
         <li>Aspect ratio 16:9</li>

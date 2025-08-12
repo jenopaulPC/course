@@ -72,7 +72,7 @@ const About = () => {
       {/* section 5 */}
       <section className='mx-auto p-2 flex flex-col items-center justify-between gap-5 mb-[140px]'>
         <LearningGrid />
-        <ContactFormSection />
+        {/* <ContactFormSection /> */}
       </section>
 
     

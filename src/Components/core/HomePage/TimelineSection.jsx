@@ -5,12 +5,14 @@ import Logo2 from "../../../assets/TimeLineLogo/Logo2.svg"
 import Logo3 from "../../../assets/TimeLineLogo/Logo3.svg"
 import Logo4 from "../../../assets/TimeLineLogo/Logo4.svg"
 import timelineImage from "../../../assets/Images/TimelineImage.png"
+import CTAButton from "../HomePage/Button"; // ✅ make sure this import is correct
+
 
 const timeline = [
     {
         Logo: Logo1,
         heading: "Leadership ",
-        Description:"Demonstrating leadership qualities, taking initiative, and being proactive in identifying opportunities ",
+        Description:"Demonstrating leadership qualities, taking initiative, and being proactive in identifying opportunities. ",
     },
     {
         Logo: Logo2,
@@ -20,7 +22,7 @@ const timeline = [
     {
         Logo: Logo3,
         heading: "Communication Skills",
-        Description:"Effective communication skills, both verbal and written, are essential for collaborating with team members",
+        Description:"Effective communication skills, both verbal and written, are essential for collaborating with team members.",
     },
     {
         Logo: Logo4,
@@ -53,7 +55,15 @@ const TimelineSection = () => {
                     )
                 } )
             }
+                        {/* ✅ Learn More Button */}
+            <div className="mt-6">
+                <CTAButton active={true} linkto="/signup">
+                    <div>Learn more</div>
+                </CTAButton>
+            </div>
+            
         </div>
+        
         <div className='relative shadow-blue-200'>
 
             <img  src={timelineImage}

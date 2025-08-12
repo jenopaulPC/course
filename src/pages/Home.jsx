@@ -20,7 +20,7 @@ import RatingSlider from '../Components/core/Ratings/RatingSlider';
 
 function Home() {
     const [CatalogPageData, setCatalogPageData] = useState(null);
-    const categoryID = "6475dbeb49dcc886b5698441";
+    const categoryID = "6882eace464f74734d09d1ab";
 
     useEffect(() => {
         const fetchCatalogPageData = async () => {
@@ -98,10 +98,10 @@ function Home() {
 
             {/* Review Slider here */}
       </div>
-      <div className=' mb-16 mt-3'>
+      {/* <div className=' mb-16 mt-3'>
         <h2 className='text-center text-2xl md:text-4xl font-semibold mt-8 text-richblack-5 mb-5'>Reviews from other learners</h2>
         <RatingSlider />
-      </div>
+      </div> */}
     </div>
   )
 }

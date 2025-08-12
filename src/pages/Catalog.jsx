@@ -54,7 +54,7 @@ useEffect(() => {
     <div>
       <div className=' box-content bg-richblack-800 px-4'>
       <div className='mx-auto flex min-h-[260px]  flex-col justify-center gap-4 '>
-        <p className='text-sm text-richblack-300'>Home / Catalog / <span className='text-yellow-25'>{Catalog.catalog}</span> </p>
+        <p className='text-sm text-richblack-300'>Home / Catalog / <span className='text-blue-25'>{Catalog.catalog}</span> </p>
         <p className='text-3xl text-richblack-5'>{Catalog?.catalog}</p>
         <p className='max-w-[870px] text-richblack-200'>
           {Desc?.description}
@@ -67,8 +67,8 @@ useEffect(() => {
         Courses to get you started
         </h2>
         <div className='my-4 flex border-b border-b-richblack-600 text-sm'>
-          <button onClick={()=>{setActiveOption(1)}}  className={activeOption===1? `px-4 py-2 border-b border-b-yellow-25 text-yellow-25 cursor-pointer`:`px-4 py-2 text-richblack-50 cursor-pointer` }>Most Populer</button>
-          <button onClick={()=>{setActiveOption(2)}} className={activeOption===1?'px-4 py-2 text-richblack-50 cursor-pointer':'px-4 py-2 border-b border-b-yellow-25 text-yellow-25 cursor-pointer'}>New</button>
+          <button onClick={()=>{setActiveOption(1)}}  className={activeOption===1? `px-4 py-2 border-b border-b-blue-25 text-blue-25 cursor-pointer`:`px-4 py-2 text-richblack-50 cursor-pointer` }>Most Populer</button>
+          <button onClick={()=>{setActiveOption(2)}} className={activeOption===1?'px-4 py-2 text-richblack-50 cursor-pointer':'px-4 py-2 border-b border-b-blue-25 text-blue-25 cursor-pointer'}>New</button>
         </div>
         <CourseSlider Courses={CatalogPageData?.selectedCourses}/>        
       </div>

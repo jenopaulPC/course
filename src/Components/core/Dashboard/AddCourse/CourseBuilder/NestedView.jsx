@@ -110,8 +110,8 @@ const NestedView = ({handelChangeEditSectionName}) => {
                                     </div>
                                 ))
                             }
-                            <button onClick={() => setAddSubSection(section._id)} className='mt-3 flex items-center gap-x-1 text-yellow-50 font-bold'>
-                                <VscAdd className='text-lg text-yellow-50 ' />
+                            <button onClick={() => setAddSubSection(section._id)} className='mt-3 flex items-center gap-x-1 text-blue-50 font-bold'>
+                                <VscAdd className='text-lg text-blue-50 ' />
                                 <p>Add Lecture</p>
                             </button>
                         </div>

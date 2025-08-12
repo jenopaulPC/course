@@ -32,7 +32,7 @@ const SearchCourse = () => {
   return (
     <div>
         <div className='mx-auto flex min-h-[260px]  flex-col justify-center gap-4 p-5 bg-richblack-800 '>
-        <p className='text-sm text-richblack-300'>Home / Search / <span className='text-yellow-25'>{searchQuery}</span> </p>
+        <p className='text-sm text-richblack-300'>Home / Search / <span className='text-blue-25'>{searchQuery}</span> </p>
         <p className='text-3xl text-richblack-5'>Search Results for {searchQuery}</p>
         <p className='max-w-[870px] text-richblack-200'>
             {searchResults?.length} results found for {searchQuery}

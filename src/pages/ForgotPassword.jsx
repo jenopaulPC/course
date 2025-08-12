@@ -38,7 +38,7 @@ const {loading}= useSelector((state)=>state.auth)
                                 </label>
                             )
                         }
-                        <button type='submit' className='mt-6 w-full rounded-[8px] bg-yellow-50 py-[12px] px-[12px] font-medium text-richblack-900'>
+                        <button type='submit' className='mt-6 w-full rounded-[8px] bg-blue-50 py-[12px] px-[12px] font-medium text-richblack-900'>
                             {!emailSent?("Reset Password"):("Resend email")}
                         </button>
                     </form> 

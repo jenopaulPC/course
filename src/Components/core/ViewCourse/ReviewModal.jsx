@@ -72,7 +72,7 @@ const ReviewModal = ({setReviewModal}) => {
             </div>
             <div className='mt-6 flex w-11/12 justify-end gap-x-2'>
               <button onClick={()=>{setReviewModal(false)}} className='px-4 py-2 rounded-lg text-sm font-medium bg-richblack-300'>Cancel</button>
-              <button type='submit' className='px-4 py-2 rounded-lg text-sm font-medium text-black  bg-yellow-100'>Submit</button>
+              <button type='submit' className='px-4 py-2 rounded-lg text-sm font-medium text-black  bg-blue-100'>Submit</button>
             </div>
           </form>
         </div>

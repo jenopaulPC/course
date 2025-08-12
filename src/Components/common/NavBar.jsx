@@ -104,7 +104,7 @@ const NavBar = ({ setProgress }) => {
                                 </div>
                                 {
                                     totalItems > 0 && (
-                                        <span className=' font-medium text-[12px] shadow-[3px ] shadow-black bg-yellow-100 text-richblack-900 rounded-full px-[4px] absolute -top-[2px] right-[1px]'>
+                                        <span className=' font-medium text-[12px] shadow-[3px ] shadow-black bg-blue-100 text-richblack-900 rounded-full px-[4px] absolute -top-[2px] right-[1px]'>
                                             {totalItems}
                                         </span>
                                     )
@@ -123,7 +123,7 @@ const NavBar = ({ setProgress }) => {
                             {
                                 token == null && (
                                     <Link to='/login' className='' onClick={() => { dispatch(setProgress(100)) }} >
-                                        <button onClick={shownav} className=' mt-4 text-center text-[15px] px-6 py-2 rounded-md font-semibold bg-yellow-50 text-black hover:scale-95 transition-all duration-200'>
+                                        <button onClick={shownav} className=' mt-4 text-center text-[15px] px-6 py-2 rounded-md font-semibold bg-blue-50 text-black hover:scale-95 transition-all duration-200'>
                                             Login
                                         </button>
                                     </Link>
@@ -131,8 +131,8 @@ const NavBar = ({ setProgress }) => {
                             }
                             {
                                 token == null && (
-                                    <Link to='/signup' className='text-yellow-50' onClick={() => { dispatch(setProgress(100)) }} >
-                                        <button onClick={shownav} className='mt-4 text-center text-[15px] px-5 py-2 rounded-md font-semibold bg-yellow-50 text-black hover:scale-95 transition-all duration-200' >
+                                    <Link to='/signup' className='text-blue-50' onClick={() => { dispatch(setProgress(100)) }} >
+                                        <button onClick={shownav} className='mt-4 text-center text-[15px] px-5 py-2 rounded-md font-semibold bg-blue-50 text-black hover:scale-95 transition-all duration-200' >
                                             Signup
                                         </button>
                                     </Link>
@@ -151,7 +151,7 @@ const NavBar = ({ setProgress }) => {
                                 )
                             }
                             <div className=' mt-4 mb-4 bg-richblack-25 w-[200px] h-[2px]'></div>
-                            <p className=' text-xl text-yellow-50 font-semibold'>Courses</p>
+                            <p className=' text-xl text-blue-50 font-semibold'>Courses</p>
                             <div className=' flex flex-col items-end pr-4'>
                                 {
                                     sublinks?.length < 0 ? (<div></div>) : (
@@ -219,7 +219,7 @@ const NavBar = ({ setProgress }) => {
                                         </div>) : (
 
                                             <Link to={element?.path} onClick={() => { dispatch(setProgress(100)) }} >
-                                                <p className={`${matchRoutes(element?.path) ? " text-yellow-25" : " text-richblack-25 hidden md:block"}`} >
+                                                <p className={`${matchRoutes(element?.path) ? " text-blue-25" : " text-richblack-25 hidden md:block"}`} >
                                                     {element?.title}
                                                 </p>
                                             </Link>
@@ -244,7 +244,7 @@ const NavBar = ({ setProgress }) => {
                                 </div>
                                 {
                                     totalItems > 0 && (
-                                        <span className=' shadow-sm shadow-black text-[10px] font-bold bg-yellow-100 text-richblack-900 rounded-full px-1 absolute -top-[2px] right-[8px]'>
+                                        <span className=' shadow-sm shadow-black text-[10px] font-bold bg-blue-100 text-richblack-900 rounded-full px-1 absolute -top-[2px] right-[8px]'>
                                             {totalItems}
                                         </span>
                                     )

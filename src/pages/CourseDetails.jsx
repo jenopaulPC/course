@@ -98,7 +98,7 @@ const CourseDetails = () => {
                             <p className='text-4xl font-bold text-richblack-5 sm:text-[42px]'>{courseDetail?.courseName}</p>
                             <p className='text-richblack-200'>{courseDetail?.courseDescription}</p>
                             <div className='flex gap-x-3 items-center'>
-                        <span className='text-yellow-50'>{avgReviewCount || 0}</span>
+                        <span className='text-blue-50'>{avgReviewCount || 0}</span>
                         <RatingStars Review_Count={avgReviewCount} />
                         <span className=' md:block hidden md:text-xl text-richblack-5'>({courseDetail?.ratingAndReviews?.length} Reviews)</span>
                         {/* student enrolled */}
@@ -125,7 +125,7 @@ const CourseDetails = () => {
                             {ACCOUNT_TYPE.INSTRUCTOR !==user?.accountType &&
                             <>
                             {
-                                alreadyEnrolled ? <button onClick={()=>{navigate("/dashboard/enrolled-courses")}}  className='yellowButton'>Go to Course</button> : <button onClick={handelPayment} className='yellowButton'>Buy Now</button>
+                                alreadyEnrolled ? <button onClick={()=>{navigate("/dashboard/enrolled-courses")}}  className='blueButton'>Go to Course</button> : <button onClick={handelPayment} className='blueButton'>Buy Now</button>
                             }
                             {
                                 alreadyEnrolled ? (<div></div>) : 
@@ -150,7 +150,7 @@ const CourseDetails = () => {
                                 {ACCOUNT_TYPE.INSTRUCTOR !==user?.accountType &&
                                 <>
                                 {
-                                    alreadyEnrolled ? <button onClick={()=>{navigate("/dashboard/enrolled-courses")}} className='yellowButton'>Go to Course</button> : <button onClick={handelPayment} className='yellowButton'>Buy Now</button>
+                                    alreadyEnrolled ? <button onClick={()=>{navigate("/dashboard/enrolled-courses")}} className='blueButton'>Go to Course</button> : <button onClick={handelPayment} className='blueButton'>Buy Now</button>
                                 }
                                 {
                                 alreadyEnrolled ? (<div></div>) : 
@@ -181,13 +181,13 @@ const CourseDetails = () => {
                             </div>
                             <div className='text-center'>
                                 {/* copy url */}
-                                <button className='mx-auto flex items-center gap-2 py-6 text-yellow-100' onClick={
+                                <button className='mx-auto flex items-center gap-2 py-6 text-blue-100' onClick={
                                     () => {
                                         navigator.clipboard.writeText(window.location.href);
                                         toast.success('URL copied to clipboard');
                                     }
                                 }>
-                                    <FaShareSquare className='text-xl text-yellow-200'/>
+                                    <FaShareSquare className='text-xl text-blue-200'/>
                                     <span>Share</span>
                                 </button>
                             </div>
@@ -215,7 +215,7 @@ const CourseDetails = () => {
                                 <span>{courseDetail?.courseContent?.length} Section(s)</span>
                                 <span>{courseDetail?.courseContent?.reduce((acc, item) => acc + item?.subSection?.length, 0)} Lecture(s)</span>
                                 </div>
-                                <button className='text-yellow-25'>
+                                <button className='text-blue-25'>
                                     <span>Collapse all sections</span>
                                 </button>
                             </div>
@@ -230,7 +230,7 @@ const CourseDetails = () => {
                                             <span className='text-xl'>{item?.sectionName}</span>
                                             </div>
                                             <div className='space-x-4'>
-                                                <span className='text-yellow-25'>{item?.subSection?.length} Lecture(s)</span>
+                                                <span className='text-blue-25'>{item?.subSection?.length} Lecture(s)</span>
                                             </div>
                                         </summary>
                                         <div className='mt-5'>

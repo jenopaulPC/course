@@ -29,7 +29,7 @@ const RenderCartCourses = () => {
                         </Link>
                         
                         <div className='flex items-center gap-2'>
-                            <span className='text-yellow-5'></span>
+                            <span className='text-blue-5'></span>
                             <ReactStars
                                 count={5}
                                 size={20}
@@ -46,7 +46,7 @@ const RenderCartCourses = () => {
                 </div>
 
                 <div className='flex flex-col items-end  space-y-2 crimson'>
-                    <p className='mb-6 text-2xl md:text-3xl font-medium text-yellow-100'>₹ {course?.price} </p>
+                    <p className='mb-6 text-2xl md:text-3xl font-medium text-blue-100'>₹ {course?.price} </p>
                     <button className='flex items-center gap-x-1 rounded-md border border-richblack-600 bg-richblack-700 py-2 px-[8px] text-pink-200 text-lg font-medium'
                     onClick={() => dispatch(removeFromCart(course._id))}
                     >
