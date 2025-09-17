@@ -47,6 +47,8 @@ const {
   getAllRating,
 } = require("../controllers/RatingAndReviews")
 
+const {downloadCertificate} = require("../controllers/certificate")
+
 //demo
 const { isDemo } = require("../middlewares/demo");
 
@@ -106,5 +108,6 @@ router.post("/addCourseToCategory", auth, isInstructor, addCourseToCategory);
 router.post("/createRating", auth, isStudent,isDemo, createRating)
 router.get("/getAverageRating", getAverageRating)
 router.get("/getReviews", getAllRating)
+router.post("/downloadCertificate", downloadCertificate)
 
 module.exports = router;

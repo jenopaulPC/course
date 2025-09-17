@@ -81,8 +81,6 @@ exports.paymentSuccess = (amount, paymentId, orderId, name,lastname) => {
                         class="highlight">${orderId}</span>.
                 </p>
             </div>
-            <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
-                    href="mailto:virtualshubham2730@gmail.com">virtualshubham2730@gmail.com</a>. We are here to help!</div>
         </div>
     </body>
     

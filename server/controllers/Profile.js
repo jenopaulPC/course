@@ -97,9 +97,14 @@ exports.getEnrolledCourses=async (req,res) => {
         }
         const enrolledCourses = await User.findById(id).populate({
 			path : "courses",
-				populate : {
+				populate : [{
 					path: "courseContent",
-			}
+			},
+			          {
+            path: "instructor", // ✅ populate instructor info
+            select: "firstName lastName email image", // select only needed fields
+          }]
+			
 		}
 		).populate("courseProgress").exec();
         // console.log(enrolledCourses);
